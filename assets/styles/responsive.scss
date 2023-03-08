@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+        .sidebar {
+            display: none;
+        }
+        .sidebar-tablet {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            // background-color: black;
+            display: flex;
+            flex-direction: column;
+            span {
+                display: flex;
+                align-items: center;
+                background-color: black;
+                padding: 5px;
+                font-size: 2rem;
+                color: white;
+                i {
+                    cursor: pointer;
+                }
+                p {
+                    font-size: 1.2rem;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-100%);
+                }
+            }
+            ul {
+                background-color: black;
+                border-bottom: 1px solid #AAAAAA;
+                width: 100%;
+                position: absolute;
+                transform: translateY(-120%); 
+                transition: all 0.5s ease-in-out;
+                // transform-origin: top; 
+                li {
+                    font-size: 1rem;
+                    border-top: 1px solid #AAAAAA;
+                    text-align: center;
+                    padding: 15px 0px;
+                    color: #AAAAAA;
+                }
+                li:hover {
+                    cursor: pointer;
+                    background-color: rgba(255, 255, 255, .5);
+                    color: white;
+                }
+            }
+        }
+        .main-area {
+            .main-content {
+                .description-container {
+                    width: 95%;
+                }
+                .content {
+                    width: 95%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                    .item {
+                        width: 45%;
+                    }
+                }
+            }
+            .footer {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+        
+        .main-area {
+            .main-content {
+                .logo {
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+                .description-container {
+                    width: 98%;
+                    .description {
+                        width: 98%;
+                    }
+                }
+                .content {
+                    width: 98%;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+                    .item {
+                        width: 90%;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .footer {
+                margin-top: 100px;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    position: relative;
+  }
+  .container .sidebar {
+    display: none;
+  }
+  .container .sidebar-tablet {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .sidebar-tablet span {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    font-size: 2rem;
+    color: white;
+  }
+  .container .sidebar-tablet span i {
+    cursor: pointer;
+  }
+  .container .sidebar-tablet span p {
+    font-size: 1.2rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-100%);
+  }
+  .container .sidebar-tablet ul {
+    background-color: black;
+    border-bottom: 1px solid #AAAAAA;
+    width: 100%;
+    position: absolute;
+    transform: translateY(-120%);
+    transition: all 0.5s ease-in-out;
+  }
+  .container .sidebar-tablet ul li {
+    font-size: 1rem;
+    border-top: 1px solid #AAAAAA;
+    text-align: center;
+    padding: 15px 0px;
+    color: #AAAAAA;
+  }
+  .container .sidebar-tablet ul li:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  .container .main-area .main-content .description-container {
+    width: 95%;
+  }
+  .container .main-area .main-content .content {
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container .main-area .main-content .content .item {
+    width: 45%;
+  }
+  .container .main-area .footer {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container .main-area .main-content .logo img {
+    width: 50%;
+    height: 50%;
+  }
+  .container .main-area .main-content .description-container {
+    width: 98%;
+  }
+  .container .main-area .main-content .description-container .description {
+    width: 98%;
+  }
+  .container .main-area .main-content .content {
+    width: 98%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container .main-area .main-content .content .item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .container .main-area .footer {
+    margin-top: 100px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

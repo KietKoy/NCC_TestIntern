@@ -40,10 +40,16 @@ body {
   border-bottom: 1px solid #AAAAAA;
   font-family: robotoBold;
 }
+.container .sidebar ul li:nth-child(1) {
+  color: white;
+}
 .container .sidebar ul li:hover {
   color: white;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.5);
+}
+.container .sidebar-tablet {
+  display: none;
 }
 .container .main-area {
   width: 100%;
@@ -52,83 +58,83 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.container .main-area .test {
+.container .main-area .main-content {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container .main-area .test .logo {
+.container .main-area .main-content .logo {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 10px 0px;
 }
-.container .main-area .test .description-container {
+.container .main-area .main-content .description-container {
   width: 80%;
   background-color: #EFEFEF;
   display: flex;
   justify-content: center;
 }
-.container .main-area .test .description-container .description {
+.container .main-area .main-content .description-container .description {
   width: 80%;
   text-align: center;
   padding: 15px 0px;
 }
-.container .main-area .test .description-container .description strong {
+.container .main-area .main-content .description-container .description strong {
   font-size: 1.1rem;
   font-family: robotoBold;
 }
-.container .main-area .test .description-container .description p {
+.container .main-area .main-content .description-container .description p {
   font-size: 1rem;
   margin-top: 10px;
 }
-.container .main-area .test .content {
+.container .main-area .main-content .content {
   width: 80%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-.container .main-area .test .content .item {
+.container .main-area .main-content .content .item {
   width: 33%;
 }
-.container .main-area .test .content .item strong {
+.container .main-area .main-content .content .item strong {
   font-size: 1.2rem;
   font-family: robotoBold;
 }
-.container .main-area .test .content .item p {
+.container .main-area .main-content .content .item p {
   margin-top: 5px;
   font-size: 1rem;
 }
-.container .main-area .test .content #dropcamping-1::before {
+.container .main-area .main-content .content #dropcamping-1::before {
   content: "";
   width: 124px;
   height: 124px;
-  background-image: url("./assets/img/css-icon 1.png");
+  background-image: url("../img/css-icon 1.png");
   background-repeat: no-repeat;
   background-size: contain;
   float: left;
 }
-.container .main-area .test .content #dropcamping-2::before {
+.container .main-area .main-content .content #dropcamping-2::before {
   content: "";
   width: 124px;
   height: 124px;
-  background-image: url("./assets/img/html-icon 1.png");
+  background-image: url("../img/html-icon 1.png");
   background-repeat: no-repeat;
   background-size: contain;
   float: left;
 }
-.container .main-area .test .content #dropcamping-3::before {
+.container .main-area .main-content .content #dropcamping-3::before {
   content: "";
   width: 124px;
   height: 124px;
-  background-image: url("./assets/img/url-icon 1.png");
+  background-image: url("../img/url-icon 1.png");
   background-repeat: no-repeat;
   background-size: contain;
   float: left;
 }
 .container .main-area .footer {
-  margin-top: 180px;
+  margin-top: 200px;
   width: 100%;
   padding: 20px 0px;
   display: flex;
